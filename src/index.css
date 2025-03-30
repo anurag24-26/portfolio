@@ -1,18 +1,24 @@
 @import "tailwindcss";
-body {
-  cursor: none; /* Hides default cursor */
-}
-
+/* Default Cursor */
+/* Default Cursor */
 .custom-cursor {
   position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
+  font-size: 24px; /* Adjust emoji size */
   pointer-events: none;
-  transition: transform 0.15s ease-out;
   transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
 }
+
+/* Cursor Effect When Hovering Over Links/Buttons */
+.hovered {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Hide Default Cursor */
+body {
+  cursor: none;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */

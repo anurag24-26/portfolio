@@ -1,29 +1,42 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [cursorVariant, setCursorVariant] = useState("default");
+  const [hovered, setHovered] = useState(false);
+  const cursorEmoji = "🔥"; // Change to any emoji like 🎯, 🚀, 🖱️, 🎨
 
   useEffect(() => {
     const moveCursor = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      requestAnimationFrame(() => {
+        setPosition({ x: e.clientX, y: e.clientY });
+      });
     };
 
+    const addHover = () => setHovered(true);
+    const removeHover = () => setHovered(false);
+
     window.addEventListener("mousemove", moveCursor);
-    return () => window.removeEventListener("mousemove", moveCursor);
+    document.querySelectorAll("a, button").forEach((el) => {
+      el.addEventListener("mouseenter", addHover);
+      el.addEventListener("mouseleave", removeHover);
+    });
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+      document.querySelectorAll("a, button").forEach((el) => {
+        el.removeEventListener("mouseenter", addHover);
+        el.removeEventListener("mouseleave", removeHover);
+      });
+    };
   }, []);
 
   return (
-    <motion.div
-      className="fixed w-6 h-6 bg-blue-500 rounded-full pointer-events-none mix-blend-difference"
-      animate={{
-        left: position.x - 12,
-        top: position.y - 12,
-        scale: cursorVariant === "hover" ? 2 : 1,
-      }}
-      transition={{ type: "spring", stiffness: 100, damping: 10 }}
-    ></motion.div>
+    <div
+      className={`custom-cursor ${hovered ? "hovered" : ""}`}
+      style={{ left: `${position.x}px`, top: `${position.y}px` }}
+    >
+      {cursorEmoji}
+    </div>
   );
 };
 

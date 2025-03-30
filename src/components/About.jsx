@@ -8,13 +8,15 @@ import {
 
 const timeline = [
   { year: "2022 - Present", title: "B.Tech in CSE", place: "GLA University" },
-  { year: "2020 - 2022", title: "PCM 12th", place: "St. Joseph's School" },
 ];
 
 const skills = [
   "React",
   "JavaScript",
   "Tailwind CSS",
+  "ReactNative",
+  "Python",
+  "Java",
   "MongoDB",
   "Node.js",
   "Git",
@@ -42,10 +44,9 @@ const About = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-lg text-center text-gray-300 max-w-3xl mx-auto leading-relaxed"
         >
-          I'm Anurag Tripathi, a **Fullstack Web Developer** from **Gorakhpur,
-          Uttar Pradesh**. Passionate about **building scalable applications**,
-          problem-solving, and creating **beautiful UI/UX experiences** with
-          modern web technologies.
+          I'm Anurag Tripathi, a Fullstack Web Developer. Passionate about
+          building scalable applications, problem-solving, and creating
+          beautiful UI/UX experiences with modern web technologies.
         </motion.p>
 
         {/* Timeline Section */}
@@ -91,65 +92,12 @@ const About = () => {
           ))}
         </div>
 
-        {/* Achievements Section */}
-        <motion.h3
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-3xl font-bold text-center mt-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
-        >
-          Achievements & Certifications
-        </motion.h3>
-
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-gray-800 p-5 rounded-lg shadow-lg flex items-center gap-4"
-          >
-            <FaAward className="text-yellow-400 text-3xl" />
-            <div>
-              <h4 className="text-lg font-semibold">UI/UX Course</h4>
-              <p className="text-gray-400">Great Learnings</p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="bg-gray-800 p-5 rounded-lg shadow-lg flex items-center gap-4"
-          >
-            <FaAward className="text-yellow-400 text-3xl" />
-            <div>
-              <h4 className="text-lg font-semibold">4-Star on HackerRank</h4>
-              <p className="text-gray-400">Python & Java</p>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Contact Info */}
-        <motion.h3
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-3xl font-bold text-center mt-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500"
-        >
-          Get In Touch
-        </motion.h3>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9 }}
           className="mt-6 flex flex-col items-center gap-4"
         >
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg flex items-center gap-4">
-            <FaEnvelope className="text-red-400 text-2xl" />
-            <span className="text-gray-300">anuragtripathi2602@gmail.com</span>
-          </div>
-
           <div className="bg-gray-800 p-4 rounded-lg shadow-lg flex items-center gap-4">
             <FaLaptopCode className="text-green-400 text-2xl" />
             <span className="text-gray-300">Fullstack Web Developer</span>

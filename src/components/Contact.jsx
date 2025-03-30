@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaUserTie } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -40,34 +34,33 @@ const Contact = () => {
           >
             <FaEnvelope className="text-red-400 text-3xl" />
             <div>
-              <h4 className="text-lg font-semibold">Email</h4>
-              <p className="text-gray-400">anuragtripathi2602@gmail.com</p>
+              <h4 className="text-lg font-semibold">
+                <a
+                  href="mailto:anuragtripathi2602@gmail.com"
+                  className="text-gray-400 hover:underline"
+                >
+                  Email
+                </a>
+              </h4>
             </div>
           </motion.div>
 
-          {/* Phone */}
+          {/* Peerlist */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gray-800 p-5 rounded-lg shadow-lg flex items-center gap-4 hover:shadow-green-500 transition"
+            className="bg-gray-800 p-5 rounded-lg shadow-lg flex items-center gap-4 hover:shadow-blue-500 transition"
           >
-            <FaPhone className="text-green-400 text-3xl" />
+            <FaUserTie className="text-red-400 text-3xl" />
             <div>
-              <h4 className="text-lg font-semibold">Phone</h4>
-              <p className="text-gray-400">+91 7985555982</p>
-            </div>
-          </motion.div>
-
-          {/* Location */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gray-800 p-5 rounded-lg shadow-lg flex items-center gap-4 hover:shadow-purple-500 transition"
-          >
-            <FaMapMarkerAlt className="text-purple-400 text-3xl" />
-            <div>
-              <h4 className="text-lg font-semibold">Location</h4>
-              <p className="text-gray-400">Gorakhpur, Uttar Pradesh</p>
+              <h4 className="text-lg font-semibold">
+                <a
+                  href="https://peerlist.io/anurag2426"
+                  className="text-gray-400 hover:underline"
+                >
+                  PeerList
+                </a>
+              </h4>
             </div>
           </motion.div>
 
@@ -79,17 +72,17 @@ const Contact = () => {
           >
             <FaLinkedin className="text-blue-400 text-3xl" />
             <div>
-              <h4 className="text-lg font-semibold">LinkedIn</h4>
-              <a
-                href="https://linkedin.com/in/yourprofile"
-                target="_blank"
-                className="text-blue-400 hover:underline"
-              >
-                linkedin.com/in/yourprofile
-              </a>
+              <h4 className="text-lg font-semibold">
+                <a
+                  href="https://www.linkedin.com/in/anurag-tripathi2602/"
+                  target="_blank"
+                  className="text-blue-400 hover:underline"
+                >
+                  Linkedin
+                </a>
+              </h4>
             </div>
           </motion.div>
-
           {/* GitHub */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -98,14 +91,15 @@ const Contact = () => {
           >
             <FaGithub className="text-gray-400 text-3xl" />
             <div>
-              <h4 className="text-lg font-semibold">GitHub</h4>
-              <a
-                href="https://github.com/yourgithub"
-                target="_blank"
-                className="text-gray-400 hover:underline"
-              >
-                github.com/yourgithub
-              </a>
+              <h4 className="text-lg font-semibold">
+                <a
+                  href="https://github.com/anurag24-26"
+                  target="_blank"
+                  className="text-gray-400 hover:underline"
+                >
+                  GitHub
+                </a>
+              </h4>
             </div>
           </motion.div>
         </div>
