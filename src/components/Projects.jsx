@@ -4,26 +4,26 @@ const projects = [
   {
     title: "EduSearch",
     description: "An educational search engine fetching learning resources.",
-    image: "/images/edusearch.png",
-    link: "https://edusearch.com",
+    image: "src/assets/image3.png",
+    link: "https://edusearchai.vercel.app",
   },
   {
     title: "CPI Calculator",
     description: "A web app for students to calculate their CPI easily.",
-    image: "/images/cpi.png",
-    link: "https://cpicalc.com",
+    image: "src/assets/image1.png",
+    link: "https://anurag24-26.github.io/cpicalculator/",
   },
   {
-    title: "Game Record Keeper",
-    description: "A mobile app to track gaming time and set usage limits.",
-    image: "/images/gamekeeper.png",
-    link: "https://gamerecordkeeper.com",
+    title: "Baatein",
+    description: "A Chat Room to make new friends without limit.",
+    image: "src/assets/image4.jpg",
+    link: "https://chat-app-e3n1.onrender.com",
   },
   {
     title: "GourmetFusion",
     description: "A modern restaurant website with animations & UI/UX.",
-    image: "/images/gourmetfusion.png",
-    link: "https://gourmetfusion.com",
+    image: "src/assets/image2.png",
+    link: "https://culinique.vercel.app/",
   },
 ];
 
