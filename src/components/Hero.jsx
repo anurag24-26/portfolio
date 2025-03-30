@@ -47,12 +47,12 @@ const Hero = () => {
           </motion.a>
 
           <motion.a
-            href="#contact"
+            href="https://drive.google.com/file/d/15Obpmlh1KFfMVaEolGQzTC7Rby5k_FVc/view?usp=sharing"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 text-lg font-semibold border-2 border-gray-300 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition-all"
           >
-            Get in Touch
+            Resume
           </motion.a>
         </div>
       </motion.div>
