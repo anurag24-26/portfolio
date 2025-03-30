@@ -1,28 +1,33 @@
 import { motion } from "framer-motion";
 
+import image1 from "../assets/image1.png";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.png";
+import image4 from "../assets/image4.jpg";
+
 const projects = [
   {
     title: "EduSearch",
     description: "An educational search engine fetching learning resources.",
-    image: "src/assets/image3.png",
+    image: image3,
     link: "https://edusearchai.vercel.app",
   },
   {
     title: "CPI Calculator",
     description: "A web app for students to calculate their CPI easily.",
-    image: "src/assets/image1.png",
+    image: image1,
     link: "https://anurag24-26.github.io/cpicalculator/",
   },
   {
     title: "Baatein",
     description: "A Chat Room to make new friends without limit.",
-    image: "src/assets/image4.jpg",
+    image: image4,
     link: "https://chat-app-e3n1.onrender.com",
   },
   {
     title: "GourmetFusion",
     description: "A modern restaurant website with animations & UI/UX.",
-    image: "src/assets/image2.png",
+    image: image2,
     link: "https://culinique.vercel.app/",
   },
 ];
