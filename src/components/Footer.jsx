@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex justify-center mt-4 space-x-6">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/anurag24-26"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition text-2xl"
@@ -24,7 +24,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/anurag-tripathi2602/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition text-2xl"
@@ -32,7 +32,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://yourportfolio.com"
+            href="https://portfolio-lovat-eight-27.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-green-400 transition text-2xl"
